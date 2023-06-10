@@ -50,7 +50,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ env.GITHUB_REGISTRY }}/${{ github.actor }}/${{ env.IMAGE_NAME }}
+          tags: ${{ env.GITHUB_REGISTRY }}/${{ github.actor }}/ghcr.io/kwierzbowski/app:latest
           cache-from: type=registry,ref=${{ env.GITHUB_REGISTRY }}/${{ github.actor }}/${{ env.IMAGE_NAME }}
           cache-to: type=inline
 
